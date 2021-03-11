@@ -1,4 +1,4 @@
-# H1 File Categorizer using FS Module in JavaScript
+#H1 File Categorizer using FS Module in JavaScript
 
 **Note - Make Sure You Don't Include Spaces In File Directory / Path**
 
