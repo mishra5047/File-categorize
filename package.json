@@ -10,6 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/mishra5047/File-categorize.git"
   },
+  "pkg": {
+    "assets": [ "node_modules/**/*", "src/**/*" ],
+    "targets": [ "node12-macos-x64", "node10-win-x64" ]
+  },
   "bin": {
     "file_sort": "category.js"
   },
