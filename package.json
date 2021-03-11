@@ -1,0 +1,22 @@
+{
+  "name": "file_cateogry",
+  "version": "1.0.0",
+  "description": "**Note - Make Sure You Don't Include Spaces In File Directory / Path**",
+  "main": "category.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mishra5047/File-categorize.git"
+  },
+  "bin": {
+    "file_sort": "category.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mishra5047/File-categorize/issues"
+  },
+  "homepage": "https://github.com/mishra5047/File-categorize#readme"
+}

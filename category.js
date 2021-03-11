@@ -1,10 +1,11 @@
 #!/usr/bin/env node
+//Made By Love By Abhishek Mishra
 
 let fs = require("fs");
 let args = process.argv.slice(2);
 
 if(args.includes("-h") || args.includes("-help")){
-    //help ka code
+    
     console.log("\n*NOTE* - Make Sure You Don't Enter Any Spaces in Input Directories")
 
     console.log("\nArgument - \t Functionality\n") 
@@ -26,15 +27,12 @@ if(args.includes("--version") || args.includes("-v")){
     process.exit();
 }
 
-let dirNames = args.slice(args
-.indexOf("-s") + 1,args.indexOf("-o"));
-let outputdirs = args.slice(args
-.indexOf("-o") + 1,args.length);
+let dirNames = args.slice(args.indexOf("-s") + 1,args.indexOf("-o"));
+let outputdirs = args.slice(args.indexOf("-o") + 1,args.length);
 
 let isToMove = false;
 
-if(args
-.includes("-m"))
+if(args.includes("-m"))
     isToMove = true;
     
 for(let idx in dirNames){
@@ -50,17 +48,16 @@ for(let x in dirNames)
 
     
 for(let idx in dirNames){
-    console.log("------------------------------------------------------------------------");
-    console.log("Source Directory : " + dirNames[idx]);
-    console.log("Output Directory : " + outputdirs[idx]);
+    console.log("*********************************************************");
+    console.log("Moving Files From : " + dirNames[idx] + " To " + outputdirs[idx]);
     console.log("Move Files : " + (isToMove).toString());
-    console.log("------------------------------------------------------------------------");
+    console.log("*********************************************************");
     getFilesAndFolder(dirNames[idx], outputdirs[idx], isToMove);
     if(isToMove){
         deleteDir(dirNames[idx]);
     }
     // console.log("Source Directory : " + dirNames[idx] + " Done");
-    console.log("------------------------------------------------------------------------");
+    console.log("*********************************************************");
 }
     
 
